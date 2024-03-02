@@ -1,0 +1,14 @@
+Name of the variable                    tupe of the variable      is it unique?      sample                                initialize value
+email                                   str                       unique             "sample@gmail.com                     ""
+email_verify_status                     t/f                       N                  True                                  False 
+available_amount                        float                     N                  30.0                                  0.0 
+total_amount                            float                     N                  30.0                                  0.0 
+wallet                                  str                       unique             TYcifsVTJmh7LZHrgHNC39fy96DZgdwrX6    ""
+TX_hash_successfully_deposit            64bit str                 N                  41db52de26f7a280336fc074e8f9ed8819b5f57fd6a5306a0dafb3a6fabe952b              ""   can be more than one
+TX_hash_pending_deposit                 64bit str                 unique             41db52de26f7a280336fc074e8f9ed8819b5f57fd6a5306a0dafb3a6fabe952b              ""
+TX_hash_failed_deposit                  64bit str (just last tx)  N                  41db52de26f7a280336fc074e8f9ed8819b5f57fd6a5306a0dafb3a6fabe952b              ""   can be more than one
+withrow_request                         t/f                       N                  False                                 False
+withdraw_amount                         float                     N                  0.0                                   0.0
+TX_hash_successfully_withrow            64bit str                 unique             41db52de26f7a280336fc074e8f9ed8819b5f57fd6a5306a0dafb3a6fabe952b              ""   can be more than one
+expired_packages                        List                      N                  bronze I, bronze II, silver I, silver II, gold, platinum, diamond, master     None can be more than one
+time + activated_packages               List                      unique             [[bronze_I, 2023-04-29 13:50:03,060 ], [silver_I, 2023-04-30 11:50:03,060]]   None can be more than one
